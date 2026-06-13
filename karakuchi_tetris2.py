@@ -92,7 +92,7 @@ BOARD_BORDER_COLOR = 7   # 盤面枠線色
 
 class App:
     def __init__(self):
-        pyxel.init(160, 360, title="Test")
+        pyxel.init(160, 360, title="Chuukara Tetris")
         pyxel.load("tetris_py.pyxres")
 
         # music:0 と music:1 を順番に再生するための設定
