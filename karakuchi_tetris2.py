@@ -182,16 +182,16 @@ class App:
                 self.reset()
             return
 
-        if pyxel.btnp(pyxel.KEY_LEFT, 10, 1):
+        if pyxel.btnp(pyxel.KEY_LEFT, 10, 1) or pyxel.btnp(pyxel.GAMEPAD1_BUTTON_DPAD_LEFT, 10, 1):
             self.move_block(-1, 0)
-
-        if pyxel.btnp(pyxel.KEY_RIGHT, 10, 1):
+            
+        if pyxel.btnp(pyxel.KEY_RIGHT, 10, 1) or pyxel.btnp(pyxel.GAMEPAD1_BUTTON_DPAD_RIGHT, 10, 1):
             self.move_block(1, 0)
-
-        if pyxel.btnp(pyxel.KEY_DOWN, 10, 1):
+            
+        if pyxel.btnp(pyxel.KEY_DOWN, 10, 1) or pyxel.btnp(pyxel.GAMEPAD1_BUTTON_DPAD_DOWN, 10, 1):
             self.move_block(0, 1)
-
-        if pyxel.btnp(pyxel.KEY_UP, 10, 10):
+            
+        if pyxel.btnp(pyxel.KEY_UP, 10, 10) or pyxel.btnp(pyxel.GAMEPAD1_BUTTON_A, 10, 1) or pyxel.btnp(pyxel.GAMEPAD1_BUTTON_B, 10, 1):
             self.rotate_block()
 
         self.fall_timer += 1
